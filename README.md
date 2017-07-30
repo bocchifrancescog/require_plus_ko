@@ -2,4 +2,4 @@
 Very simple javascript app to show how to use requirejs with knockoutjs
 
 ## How To run
-Open index.html with your browser
+Open index.html in your browser
