@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title> Knockout + Require </title>
+    <script data-main="app" src="libs/require.js"></script>
+
+    <body>
+      <div id="app">
+        <p>The title is:
+          <b data-bind="text: title">The content of this paragraph will change</b>
+        </p>
+
+        <p> This value comes from another viewModel imported in main.js:
+          <b data-bind="text: anotherVM.title"></b>
+        </p>
+      </div>
+    </body>
+</html>
