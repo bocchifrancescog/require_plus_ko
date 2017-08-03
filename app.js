@@ -6,7 +6,12 @@ requirejs.config({
     paths: {
         "src": "../src/",
         "knockout": "knockout.3.4.2",
-    }
+        "jquery": "jquery-3.2.1.min"
+    },
+    map: {
+      '*': { 'jquery': 'jquery-private' },
+      'jquery-private': { 'jquery': 'jquery' }
+    },
 });
 
 // Start loading the main app file. Put all of

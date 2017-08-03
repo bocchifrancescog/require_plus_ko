@@ -12,6 +12,18 @@
         <p> This value comes from another viewModel imported in main.js:
           <b data-bind="text: anotherVM.title"></b>
         </p>
+        <div>
+          <button data-bind="click: addScientist"> Add a random scientist </button>
+        </div>
+        <p>
+          Showing an array
+          <ul data-bind="foreach: myArray">
+            <li>
+                Index: <span data-bind="text: $index "></span>
+                <span data-bind="text: firstName"></span> - <span data-bind="text: lastName"></span>
+            </li>
+          </ul>
+        </p>
       </div>
     </body>
 </html>
